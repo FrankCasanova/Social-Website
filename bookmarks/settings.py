@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1oap)z*##czcmu$#=#4(^^3-yhk2&2%n+8g&%=g)2v!_(7@wgo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # thir party apps
+    'social_django',
+    'django_extensions'
 
     # that app cannot be before than account app, coz otherwise it charge the page before
 ]
