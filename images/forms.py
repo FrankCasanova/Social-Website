@@ -29,9 +29,10 @@ class ImageCreateForm(forms.ModelForm):  # 5-5
     def save(self, force_insert=False,
              force_update=False,
              commit=True):
-        image = super().save(commit=False)
+        image = super().save(commit=False)  # that create an image instance
+        # get the URL from the cleaned_data dictionary of the form
         image_url = self.cleaned_data['url']
-        name = slugify(image.title)
+        name = slugify(image.title)  # generate image name
         extension = image_url.rsplit('.', 1)[1].lower()
         image_name = f'{name}.{extension}'
 
