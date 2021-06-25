@@ -44,7 +44,8 @@ INSTALLED_APPS = [
 
     # thir party apps
     'social_django',
-    'django_extensions'
+    'django_extensions',
+    'easy_thumbnails',
 
     # that app cannot be before than account app, coz otherwise it charge the page before
 ]
