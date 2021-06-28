@@ -9,6 +9,10 @@ from django.contrib import messages
 from .models import Profile
 from django.shortcuts import get_object_or_404  # 191
 from django.contrib.auth.models import User  # 191
+from django.http import JsonResponse  # 196
+from django.views.decorators.http import require_POST
+from common.decorators import ajax_required
+from .models import Contact
 # Create your views here.
 
 
@@ -116,3 +120,29 @@ def user_detail(request, username):  # 191
                   'account/user/detail.html',
                   {'section': 'people',
                    'user': user})
+
+
+@ajax_required
+@require_POST
+@login_required
+def user_follow(request):  # 196
+    """
+    That view perform the process to follow/unfollow users
+    """
+    user_id = request.POST.get('id')
+    action = request.POST.get('action')
+    if user_id and action:
+        try:
+            user = User.objects.get(id=user_id)
+            if action == 'follow':
+                Contact.objects.get_or_create(user_from=request.user,
+                                              user_to=user)
+            else:
+                Contact.objects.filter(user_from=request.user,
+                                       user_to=user).delete()
+            return JsonResponse({'status': 'ok'})
+
+        except User.DoesNotExist:
+            return JsonResponse({'status': 'error'})
+
+    return JsonResponse({'status': 'error'})
