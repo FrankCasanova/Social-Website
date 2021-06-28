@@ -23,6 +23,8 @@ class Image(models.Model):  # 5-2
     users_like = models.ManyToManyField(settings.AUTH_USER_MODEL,  # 5-4 #makemigration migration
                                         related_name='images_liked',
                                         blank=True)
+    total_likes = models.PositiveBigIntegerField(db_index=True,
+                                                 default=0)
 
     def __str__(self):  # 5-3
         return self.title
