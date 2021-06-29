@@ -27,3 +27,4 @@ sqlparse==0.4.1
 toml==0.10.2
 urllib3==1.26.5
 Werkzeug==2.0.1
+redis>=3.4.1
