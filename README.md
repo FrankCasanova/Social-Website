@@ -1,6 +1,8 @@
 # Social-Website
 A social web site
-------------------PROJECT IN DEVELOPMENT--------------------
+------------------------
+PROJECT IN DEVELOPMENT
+------------------------
 
 I hope can deploy this soon, but is some tedious
 
