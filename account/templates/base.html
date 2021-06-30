@@ -11,7 +11,10 @@
 </head>
 <body>
     <div id="header">
-        <span class="logo">Bookmarks</span>
+    <a href="{% url 'dashboard' %}">
+        <span class="logo">
+  
+        Bookmarks</span></a>
         {% if request.user.is_authenticated %}
     <ul class="menu">
       <li {% if section == "dashboard" %}class="selected"{% endif %}>

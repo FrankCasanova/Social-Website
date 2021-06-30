@@ -3,6 +3,9 @@
 {% block title %}Images bookmarked{% endblock %}
 
 {% block content %}
+  <button>
+        <a href="{% url "images:ranking" %}"> RANKING</a>
+    </button>
   <h1>Images bookmarked</h1>
   <div id="image-list">
     {% include "images/image/list_ajax.html" %}
