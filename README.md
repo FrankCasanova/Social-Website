@@ -4,27 +4,9 @@ A social web site
 PROJECT IN DEVELOPMENT
 ------------------------
 
-I hope can deploy this soon, but is some tedious
-
-This project is just for training concepts like OAuth and complex functions with Redis
-
-
-I want dockerize all
-fix some bugs
-TDD has not been aplied, I want to cover all project 
-and then create a deploy versión
-
-for WSL:
-sudo service postgresql restart
-sudo service redis-server start
-source venv/bin/activate
-
-for test with certificate host use:
-
-python manage.py runserver_plus --cert-file cert.crt
-
-main page:
-https://mysite.com:8000/account/
+-i need to fix twitter authentication
+-profile when a user log with Oauth
+-email recuperation password system
 
 
 -A follow system using many-to-many relationships with an 
