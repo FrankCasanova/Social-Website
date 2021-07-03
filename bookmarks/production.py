@@ -103,11 +103,11 @@ DATABASES = {
 
         'NAME': 'social-website',
 
-        'USER': 'postgres',
+        'USER': 'joaqaatoiysqoe',
 
-        'PASSWORD': '1234',
+        'PASSWORD': '46281a02899f58ba6110fb479876e637525a829fe9c97e33e74b2cb4e18b5018',
 
-        'HOST': '127.0.0.1',
+        'HOST': 'ec2-35-168-145-180.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
