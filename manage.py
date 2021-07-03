@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bookmarks.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                          'bookmarks.settings')  # change to production to run production settings
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
