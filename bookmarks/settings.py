@@ -175,12 +175,12 @@ AUTHENTICATION_BACKENDS = [
 
 # Google Consumer Key
 
-SOCIAL_AUTH_TWITTER_KEY = 'Hd6TwbR6CkcscECbqgAHPz9S5'  # Twitter API Key
+SOCIAL_AUTH_TWITTER_KEY = '================='  # Twitter API Key
 # Twitter API Secret
-SOCIAL_AUTH_TWITTER_SECRET = '5zSnOaDkBz1NgjFyU68Ot27Il1JS5NVoe1mcRi3xZu10Om6gdD'
+SOCIAL_AUTH_TWITTER_SECRET = '============='
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '310951940613-6lbgc4r1o2k6i33gqsdmg77jfdthki6q.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '75BpfZoNs_96lD1J_t9YbY8y'  # Google Consumer Secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '============'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '========'  # Google Consumer Secret
 
 ABSOLUTE_URL_OVERRIDES = {
     'auth.user': lambda u: reverse_lazy('user_detail',
