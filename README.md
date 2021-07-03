@@ -1,17 +1,18 @@
 # Social-Website
 A social web site
-------------------PROJECT IN DEVELOPMENT--------------------
+------------------------
+PROJECT IN DEVELOPMENT
+------------------------
 
 I hope can deploy this soon, but is some tedious
 
 This project is just for training concepts like OAuth and complex functions with Redis
 
-------------------------
+
 I want dockerize all
 fix some bugs
 TDD has not been aplied, I want to cover all project 
 and then create a deploy versión
------------------------ 
 
 for WSL:
 sudo service postgresql restart
